@@ -1,0 +1,299 @@
+/* Resetando estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a fonte padrão */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Estilizando o header */
+header {
+    background-color: #0c0c0c;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header .menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header .menu a:hover {
+    color: rgb(255, 149, 0);
+}
+
+/* Estilizando o hero */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 1rem;
+    color: white;
+}
+
+.imagemHero {
+    width: auto;
+    height: auto;
+    background-color: rgb(71, 65, 65);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    transition: transform 0.3s;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.textoHero {
+    width: auto;
+    height: auto;
+}
+
+.textoHero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background-color: #0c0c0c;
+    
+}
+
+.textoHero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    background-color: #0c0c0c;
+}
+
+.textoHero .btnCTA {
+    background-color: rgb(255, 153, 0);
+    padding: 1rem 2rem;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    
+}
+
+.textoHero .btnCTA:hover {
+    background-color: #d77b00;
+}
+
+/* Estilizando as seções de conteúdo */
+section {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#recursos h2, #sobre h2, #provaSocial h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #000000;
+}
+
+#recursos ul, #provaSocial ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    color: #000000;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    background-color: #333;
+}
+
+#recursos li, #provaSocial li {
+    width: 45%;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(214, 205, 205, 0.959);
+    transition: transform 0.3s;
+    list-style-type: none;
+}
+
+#recursos li:hover, #provaSocial li:hover {
+    transform: translateY(-10px);
+    list-style-type: none;
+}
+
+.featIMG img, .foto img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.desc h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.desc p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+#cta .ctaTexto {
+    text-align: center;
+    background-color: #0c0c0c;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+#cta .ctaTexto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#cta .ctaTexto ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+}
+
+#cta .ctaTexto ul li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+#cta form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cta form input[type="text"],
+#cta form input[type="tel"],
+#cta form input[type="email"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#cta form input[type="submit"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem;
+    background-color: #f90;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#cta form input[type="submit"]:hover {
+    background-color: #d77b00;
+}
+
+/* Estilizando o rodapé */
+footer {
+    background-color: #0c0c0c;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Botão de voltar ao topo */
+#btnUp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0c0c0c;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 2rem;
+    display: none;
+    transition: opacity 0.5s;
+}
+
+#btnUp:hover {
+    background-color: #f90;
+}
+
+/* Mostrar o botão de voltar ao topo quando rolar para baixo */
+window.onscroll = function() {
+    var btnUp = document.getElementById("btnUp");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btnUp.style.display = "block";
+    } else {
+        btnUp.style.display = "none";
+    }
+}
+#sobre {
+    width: 100%;
+    background-color:#333;
+    padding: 2px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.959);
+    h2 {
+        width: 1280px;
+        margin: 0 auto 16px auto;
+        text-align: center;
+        color: #fafafa;
+    }
+    p {
+        width: 1000px;
+        margin: 16px auto;
+        color: #fafafa;
+    }
+    ul {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        color: #fafafa;
+        li {
+            width: 240px;
+            height: 480px;
+            padding: 16px;
+            list-style-type: none;
+            border-radius: 120px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            transition: .5s;
+            .foto {
+                width: 100%;
+                border-radius: 50%;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+    

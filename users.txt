@@ -1,0 +1,15 @@
+beatris-costa      senai127  host: 10.127.0.185 porta: 21
+beatriz-lima       senai127
+david-santos       senai127
+dominique-freitas  senai127
+elyelson-silva     senai127
+joao-santos        senai127
+karoline-mendes    senai127
+laryssa-araujo     senai127
+leticia-carolina   senai127
+myrella-alves      senai127
+pedro-medeiros     senai127
+raphael-freitas    senai127
+taissa-cristine    senai127
+thiago-medeiros    senai127
+wallace-henrique   senai127
